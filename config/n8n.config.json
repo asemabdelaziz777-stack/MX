@@ -1,0 +1,17 @@
+{
+  "n8n": {
+    "baseUrl": "https://n8n.srv1313889.hstgr.cloud",
+    "mcpEndpoint": "/mcp-server/http",
+    "apiVersion": "v1"
+  },
+  "mcp": {
+    "mode": "stdio",
+    "logLevel": "error",
+    "disableConsoleOutput": true
+  },
+  "connection": {
+    "timeout": 30000,
+    "retryAttempts": 3,
+    "retryDelay": 1000
+  }
+}

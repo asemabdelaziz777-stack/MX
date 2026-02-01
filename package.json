@@ -1,0 +1,16 @@
+{
+  "name": "mx-n8n-integration",
+  "version": "1.0.0",
+  "description": "MX Project with n8n Integration",
+  "main": "index.js",
+  "scripts": {
+    "test:connection": "node scripts/test-connection.js",
+    "test:connection:bash": "bash scripts/test-connection.sh"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "keywords": ["n8n", "mcp", "automation"],
+  "author": "",
+  "license": "MIT"
+}
