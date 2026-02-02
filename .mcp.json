@@ -1,13 +1,15 @@
 {
   "mcpServers": {
-    "n8n": {
-      "type": "stdio",
+    "n8n-mcp": {
       "command": "npx",
-      "args": ["-y", "n8n-mcp"],
-      "env": {
-        "N8N_API_URL": "${N8N_API_URL}",
-        "N8N_API_KEY": "${N8N_API_KEY}"
-      }
+      "args": [
+        "-y",
+        "supergateway",
+        "--streamableHttp",
+        "https://n8n.srv1313889.hstgr.cloud/mcp-server/http",
+        "--header",
+        "authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NDEwYmZhZC04MjI0LTQyNjQtOTY2OC1mODFmMjFkZWQyZDkiLCJpc3MiOiJuOG4iLCJhdWQiOiJtY3Atc2VydmVyLWFwaSIsImp0aSI6IjNmZDJmYmIyLWVlYWMtNGRkMi1iZTUyLWRmMTY3Yjk4N2U0MyIsImlhdCI6MTc2OTk3NzczMH0.2ISJZWBix_1Gl-qnIgs4yfC3naMWFamPSA1HFHHRzGY"
+      ]
     }
   }
 }
